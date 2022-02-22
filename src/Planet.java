@@ -5,19 +5,27 @@ public class Planet {
     String destination;
     ArrayList<Moon> moons;
 
-    public static void main(String[] args) {
+    static String getDesignation() {
+        return "";
+    }
+    void setDesignation(String getDesignation){
 
     }
+    static int getOrbitTime() {
+        return 0;
+    }
 
-    Planet(int orbitTime, String destination){
+    public Planet(int orbitTime, String destination){
+
 
     }
 }
 
+
 class RockPlanet extends Planet {
     boolean habitable;
 
-    RockPlanet(int orbitTime, String destination, boolean habitable) {
+    public RockPlanet(int orbitTime, String destination, boolean habitable) {
         super(orbitTime, destination);
     }
 }
