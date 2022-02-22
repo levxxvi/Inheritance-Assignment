@@ -2,24 +2,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Planet {
-    int orbitTime;
-    String destination;
-    ArrayList<Moon> moons;
+    private int orbitTime;
+    private String destination;
+    private ArrayList<Moon> moons;
 
     public Planet(int orbitTime, String destination){
     }
+    public Planet (){}
 
-    static String getDesignation() {
+    public static String getDesignation() {
         return "";
     }
-    void setDesignation(String getDesignation){}
-    static int getOrbitTime() {
+    public void setDesignation(String getDesignation){}
+    public static int getOrbitTime() {
         return 0;
     }
-    void setOrbitTime(int getOrbitTime){}
-    //fix this
-    void addMoon(Moon[] moons){}
-    List<Moon> getMoons(){
+    public void setOrbitTime(int getOrbitTime){}
+    public void addMoon(Moon[] moons){}
+    public List<Moon> getMoons(){
         return null;
     }
     public String toString(){
@@ -32,11 +32,17 @@ public class Planet {
     }
 }
 
-
 class RockPlanet extends Planet {
-    boolean habitable;
+    private boolean habitable;
 
     public RockPlanet(int orbitTime, String destination, boolean habitable) {
         super(orbitTime, destination);
+    }
+    public static boolean isHabitable(){
+        return false;
+    }
+    public void setHabitable(boolean isHabitable){}
+    public String toString(){
+        return null;
     }
 }

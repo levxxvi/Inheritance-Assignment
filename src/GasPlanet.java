@@ -6,4 +6,15 @@ public class GasPlanet extends Planet{
     GasPlanet(int orbitTime, String destination, boolean hasRings, Color color) {
         super(orbitTime, destination);
     }
+    static boolean isHasRings(){
+        return false;
+    }
+    void setHasRings(boolean isHasRings){}
+    static Color getColor(){
+        return null;
+    }
+    void setColor(Color getColor){}
+    public String toString(){
+        return null;
+    }
 }
