@@ -1,10 +1,18 @@
 public class Moon {
-    int orbitTime;
-    boolean atmosphere;
-    String designation;
-    public Planet planet;
+    private int orbitTime;
+    private boolean atmosphere;
+    private String designation;
+    private Planet planet;
 
-    Moon(Planet planet, int orbitTime, boolean atmosphere, String designation){
+    public Moon(Planet planet, int orbitTime, boolean atmosphere, String designation){
+    }
 
+    public String getDesignation(){
+        return null;
+    }
+    public void setDesignation(String getDesignation){}
+    //fix
+    public Planet getPlanet() {
+        return planet;
     }
 }
