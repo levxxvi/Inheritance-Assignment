@@ -18,7 +18,7 @@ public class Planet {
         return 0;
     }
     public void setOrbitTime(int getOrbitTime){}
-    public void addMoon(Moon[] moons){}
+    public void addMoon(Moon moons){}
     public List<Moon> getMoons(){
         return null;
     }
